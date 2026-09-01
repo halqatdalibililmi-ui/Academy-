@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Academic Auto System</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+<header class="topbar">
+  <div><strong>Academic Auto System</strong><span class="muted">نظام أكاديمي تلقائي متعدد المدارس</span></div>
+  <div class="actions"><button class="btn ghost" onclick="toggleLang()">العربية / English</button><button class="btn" onclick="backupData()">نسخ احتياطي</button><label class="btn ghost filebtn">استعادة<input type="file" id="restoreFile" accept=".json" hidden></label></div>
+</header>
+<div class="layout">
+<aside class="sidebar">
+  <button class="nav active" data-page="dashboard">لوحة التحكم</button>
+  <button class="nav" data-page="schools">المدارس</button>
+  <button class="nav" data-page="students">الطلاب</button>
+  <button class="nav" data-page="classes">الصفوف</button>
+  <button class="nav" data-page="subjects">المواد</button>
+  <button class="nav" data-page="results">الدرجات</button>
+  <button class="nav" data-page="exams">الاختبارات</button>
+  <button class="nav" data-page="documents">المستندات</button>
+  <button class="nav" data-page="settings">الإعدادات</button>
+</aside>
+<main id="content"></main>
+</div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
